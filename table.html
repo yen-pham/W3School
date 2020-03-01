@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .t1,
+        .t1 th,
+        .t1 td {
+            border: 1px solid black;
+        }
+
+        .t2,
+        .t2 th,
+        .t2 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .t3,
+        .t3 th,
+        .t3 td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .t3 {
+            border-spacing: 15px;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h2>Bordered Table</h2>
+    <p>Sử dụng thuộc tính border để thêm viền cho table</p>
+
+    <table class="t1" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Collapsed Borders</h2>
+    <p>Các đường viền thu gọn lại thành 1 đường thì thêm thuộc tính collased</p>
+
+    <table class="t2" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Border Spacing</h2>
+    <p>Khoảng cách của các viền giữ các cột</p>
+
+    <table class="t3" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Cell that spans two columns</h2>
+    <p>Nếu 1 ô có nhiều hơn 2 cột thì sử dungj thuộc tính colspan </p>
+
+    <table class="t2" style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>55577854</td>
+            <td>55577855</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Cell that spans two rows</h2>
+    <p>Nếu 1 ô có nhiều hàng thì sử dụng thuộc tính rowspan</p>
+
+    <table class="t2" style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>55577854</td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Table Caption</h2>
+    <p>Để thêm ghi chú vào bảng thì sử dụng thẻ caption</p>
+
+    <table class="t2" style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Styling table</h2>
+    <table class="t2" id="t01" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+
+</html>
