@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--     
+    <meta http-equiv="refresh" content="30"> refesh trang 30s 1 laanf  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cung cấp cho trình duyệt về cách kiểm soát kích thước tỷ lệ của trang 
+    Phần width = width-width thiết lập chiều rộng của trang để theo chiều rộng màn hình của thiết bị (sẽ thay đổi tùy theo thiết bị).
+
+Phần scale-scale = 1.0 đặt mức thu phóng ban đầu khi trang được trình duyệt tải lần đầu tiên. -->
+<!-- <base href="https://www.w3schools.com/images/" target="_blank"> -->
+<!-- Kết hợp với các đường dẫn tương đối ở phía dưới để trở thàng đường dẫn tuyệt đối -->
+    <title>List</title>
+    <style>
+        .l4 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .l4 li {
+            float: left;
+        }
+
+        .l4 li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .l4 li a:hover {
+            background-color: #111111;
+        }
+        * {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+/* khi reponsive chiều rộng cửa sổ trình duyệt nhỏ hơn =800 thì chiều trộng 3 div = 100% */
+    </style>
+</head>
+
+<body>
+    <h2>A Description List</h2>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <hr>
+    <h2>A Nested List</h2>
+    <p>List can be nested (lists inside lists):</p>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+    <h2>The start attribute</h2>
+    <p>Sử dụng thuộc tính start để chỉ định số bắt đầu đếm</p>
+
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="I" start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <h2>Navigation Menu</h2>
+    <p>Tạo danh sách nằm ngang</p>
+
+    <ul class="l4">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <hr>
+    <h1>BLOCKS</h1>
+    <img src="block.png">
+
+    <img src="inline.png">
+    <hr>
+    <h1>CLASSES</h1>
+    <h2>Using The class Attribute in JavaScript</h2>
+    <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+    <hr>
+    <h2>Using The id Attribute in JavaScript</h2>
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
+    <hr>
+    <h1>Iframe</h1>
+    <h2>HTML Iframes</h2>
+<p>Thẻ Iframe dùng để hiển thị 1 trang web trong 1 trang web ,có thể chỉnh độ dài rộng của iframe bằng thuộc tính width height </p>
+
+<iframe src="https://zingmp3.vn/" height="500" width="1000" style="border:none;"></iframe>
+<hr>
+<h2>Iframe - Target for a Link</h2>
+
+<iframe height="500px" width="1000px" src="https://zingmp3.vn/" name="iframe_a"></iframe>
+
+<p><a href="https://taihinhnenanime.com/tuyen-chon-hinh-nen-doremon-3d/" target="iframe_a">hinhnendoraemon</a></p>
+<hr>
+<h1>JAVASCRIPT</h1>
+<p id="demo">Thay đổi style cho thẻ </p>
+<script>
+    function myFunction() {
+      document.getElementById("demo").style.fontSize = "25px"; 
+      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.backgroundColor = "yellow";        
+    }
+    </script>
+    
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <hr>
+    <script>
+        function light(sw) {
+          var pic;
+          if (sw == 0) {
+            pic = "https://www.w3schools.com/html/pic_bulboff.gif"
+          } else {
+            pic = "https://www.w3schools.com/html/pic_bulbon.gif"
+          }
+          document.getElementById('myImage').src = pic;
+        }
+        </script>
+        
+        <img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180">
+        
+        <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+        <hr>
+        <h1>LAYOUT</h1>
+        <img src="layout.png" alt="">
+        <h1>REPONSIVE</h1>
+        <h1 style="font-size:10vw;">Responsive Text</h1>
+        <!-- Font-size được đặt bằng đơn vị vw ,kích thước văn bản sẽ đi theo cửa sổ trình duyệt khi reponsive -->
+        <hr>
+        <h2>Media Queries</h2>
+<p>Resize the browser window.</p>
+
+<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
+<hr>
+</body>
+
+</html>
